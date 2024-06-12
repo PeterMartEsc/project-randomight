@@ -1,21 +1,24 @@
 # Project Randomight
 
-ES:
-Este es el repositorio en el que trabajaré en mi nuevo juego de Discord. 
+<u>Spanish:</u>
 
-El proyecto toma como base el repositorio de ejemplo de discord:
+Este es el repositorio en el que trabajaré en mi nuevo juego de Discord. El proyecto toma como base el repositorio de ejemplo de discord:
+
 https://github.com/discord/user-install-example
 
-El codigo implementado en la carpeta [code](code), irá evolucionando según 
-desarrolle la app de discord.
+El codigo implementado en la carpeta <b>[code](code)</b>, irá evolucionando según desarrolle la app de discord.
+
+La explicación de lo que quiero llegar a hacer se encuentra en 
+la carpeta <b>[guide](guide/Spanish/)</b>
 
 -------------------------------------------------------------------------
 
-EN:
-This is the repository in which I will work into my new discord game.
+<u>English</u>:
 
-The project is based on the example discord repository:
+This is the repository in which I will work into my new discord game. The project is based on the example discord repository:
+
 https://github.com/discord/user-install-example
 
-The code deployed in the [code](code) folder will evolve as
-I develop my discord app.
+The code deployed in the [code](code) folder will evolve as I develop my discord app.
+
+The explanation of what I want to do is located in the <b>[guide](guide/English/)</b> folder
