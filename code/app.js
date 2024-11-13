@@ -30,7 +30,8 @@ app.post('/interactions', async function (req, res) {
   }
 
   // Log request bodies
-  console.log(req.body);
+  //console.log(req.body);
+  console.log("HALLO");
 
   /**
    * Handle slash command requests
@@ -49,9 +50,13 @@ app.post('/interactions', async function (req, res) {
         },
       });
     }
+    //custom profile command
+  
+
     // "profile" command
     if (name === 'profile') {
-      const profile = getFakeProfile(0);
+      //const profile = getFakeProfile(0);
+      const profile = getFakeProfile(1);
       const profileEmbed = createPlayerEmbed(profile);
 
       // Use interaction context that the interaction was triggered from
@@ -123,6 +128,18 @@ app.post('/interactions', async function (req, res) {
         data: {
           content: `${selectedItem.emoji} **${selectedItem.name}**: ${selectedItem.description}`,
         },
+      });
+    }
+
+    // "test" command
+    if (name === 'test') {
+      // Send a message into the channel where command was triggered from
+      return res.send({
+      type: InteractionResponseType.CHANNEL_MESSAGE_WITH_SOURCE,
+      data: {
+          // Fetches a random emoji to send from a helper function
+          content: 'hello world ' + getRandomEmoji(),
+      },
       });
     }
   }

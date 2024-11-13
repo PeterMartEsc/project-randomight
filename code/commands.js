@@ -47,11 +47,21 @@ const LINK_COMMAND = {
   contexts: [1],
 };
 
+// test account command
+const TEST_COMMAND = {
+  name: 'test',
+  type: 1,
+  description: 'Sends a test message in channel',
+  integration_types: [0],
+  contexts: [0],
+};
+
 const ALL_COMMANDS = [
   WIKI_COMMAND,
   LEADERBOARD_COMMAND,
   PROFILE_COMMAND,
   LINK_COMMAND,
+  TEST_COMMAND,
 ];
 
 InstallGlobalCommands(process.env.APP_ID, ALL_COMMANDS);
